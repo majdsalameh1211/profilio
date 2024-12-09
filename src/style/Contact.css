@@ -1,0 +1,32 @@
+.contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    text-align: center; /* Center the text */
+    font-weight: bold;  /* Make the text bold */
+    color: #007BFF;     /* Set the text color to blue */
+    font-size: 2rem;    /* Increase font size for a title */
+    margin: 1.5rem 0;   /* Adjust spacing for a title */
+  }
+  
+  
+  .contact p {
+    color: inherit;
+  }
+  
+  .contact a {
+    color: #007BFF; /* Links stay blue */
+  }
+  
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  

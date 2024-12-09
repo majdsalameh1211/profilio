@@ -1,0 +1,161 @@
+/* General About Section */
+.about-text p {
+  color: inherit; /* Inherit text color from body */
+}
+
+.about-text h3 {
+  color: #007BFF; /* Ensure blue highlights remain */
+}
+h4 {
+  text-align: center; /* Center the text */
+  font-weight: bold;  /* Make the text bold */
+  color: #007BFF;     /* Set the text color to blue */
+  font-size: 2rem;    /* Increase font size for a title */
+  margin: 1.5rem 0;   /* Adjust spacing for a title */
+}
+
+
+.about {
+  margin-top: 80px; /* Adjust for header height */
+  padding: 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+
+
+
+/* Skills Section */
+.skills-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.slick-slider {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.skill-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px; /* Default square size */
+  height: 250px; /* Default square size */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem; /* Spacing between boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-box h3 {
+  color: #007BFF; /* Titles in blue */
+}
+
+.skill-box li {
+  color: inherit; /* Inherit text color */
+}
+
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display skills in a row */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+
+.skill-box li:not(:last-child)::after {
+  content: " | "; /* Add separator between skills */
+  color: #333;
+}
+
+.skill-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.slick-dots li button:before {
+  color: #007BFF;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #007BFF;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .skill-box {
+    width: 200px; /* Smaller width for smaller screens */
+    height: 200px; /* Smaller height for smaller screens */
+  }
+
+  .skill-box h3 {
+    font-size: 1rem; /* Smaller font size for title */
+  }
+
+  .skill-box ul {
+    gap: 0.3rem; /* Reduce spacing between skills */
+  }
+
+  .skill-box li {
+    font-size: 0.9rem; /* Smaller font size for skills */
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-box {
+    width: 180px; /* Further reduce width */
+    height: 180px; /* Further reduce height */
+    margin: 0.5rem; /* Adjust spacing */
+  }
+
+  .skill-box h3 {
+    font-size: 0.9rem; /* Smaller font for title */
+  }
+
+  .skill-box li {
+    font-size: 0.8rem; /* Smaller font for skills */
+  }
+
+  .skills-section h2 {
+    font-size: 1.5rem; /* Reduce section title size */
+  }
+}

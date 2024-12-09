@@ -1,0 +1,228 @@
+/* General Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  height: 80px; /* Full header height */
+  transition: height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+/* Collapsed Header */
+.header.collapsed {
+  height: 20px; /* Collapsed header height */
+  padding: 0 1rem;
+  opacity: 0.8; /* Slight transparency */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Expand Header on Hover */
+.header.collapsed:hover {
+  height: 80px; /* Full header height */
+  opacity: 1; /* Fully visible */
+  overflow: visible; /* Show content */
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  transition: opacity 0.3s ease; /* Smooth fade effect for content */
+}
+
+/* Hide header content when collapsed */
+.header.collapsed .header-content {
+  opacity: 0; /* Make content invisible */
+  pointer-events: none; /* Disable interaction */
+  transition: opacity 0.3s ease;
+}
+
+/* Show header content on hover */
+.header.collapsed:hover .header-content {
+  opacity: 1; /* Make content visible */
+  pointer-events: auto; /* Enable interaction */
+  transition: opacity 0.3s ease;
+}
+
+/* Header Image */
+.header-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--header-text);
+  transition: transform 0.3s ease;
+}
+
+.header-image:hover {
+  transform: scale(1.2); /* Enlarge image slightly */
+}
+
+/* Header Text */
+.header-text h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header-text li {
+  list-style: none;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background-color: transparent;
+  border: 1px solid var(--header-text);
+  color: var(--header-text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--header-text);
+  color: var(--header-bg);
+}
+
+/* Navigation Links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--header-text);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hide buttons and nav links in collapsed state */
+.header.collapsed .theme-toggle,
+.header.collapsed nav ul {
+  display: none; /* Ensure they disappear */
+}
+
+/* Reappear buttons and nav links on hover */
+.header.collapsed:hover .theme-toggle,
+.header.collapsed:hover nav ul {
+  display: block; /* Reappear when hovered */
+  opacity: 1; /* Fully visible */
+  transition: opacity 0.3s ease;
+}
+
+/* Light and Dark Theme Variables */
+body.light-theme {
+  --header-bg: #ffffff;
+  --header-text: #333333;
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
+body.dark-theme {
+  --header-bg: #333333;
+  --header-text: #ffffff;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Stack header content vertically on smaller screens */
+  .header-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Adjust header image size */
+  .header-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Adjust text size */
+  .header-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .header-text li {
+    font-size: 0.9rem;
+  }
+
+  /* Navigation links in smaller font */
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* Theme toggle button size */
+  .theme-toggle {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce header size on very small screens */
+  .header {
+    height: 60px;
+  }
+
+  .header.collapsed {
+    height: 15px;
+  }
+
+  .header.collapsed:hover {
+    height: 60px; /* Smaller height for expanded state */
+  }
+
+  /* Header image smaller */
+  .header-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Smaller text for navigation */
+  .header-text h3 {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+
+  /* Adjust theme toggle button */
+  .theme-toggle {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+/* Title Styling (Example: h4) */
+h4 {
+  text-align: center; /* Center the text */
+  font-weight: bold;  /* Make the text bold */
+  color: #007BFF;     /* Set the text color to blue */
+  font-size: 2rem;    /* Increase font size for a title */
+  margin: 1.5rem 0;   /* Adjust spacing for a title */
+}

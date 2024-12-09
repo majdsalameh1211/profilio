@@ -1,0 +1,49 @@
+.projects {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h4 {
+    text-align: center; /* Center the text */
+    font-weight: bold;  /* Make the text bold */
+    color: #007BFF;     /* Set the text color to blue */
+    font-size: 2rem;    /* Increase font size for a title */
+    margin: 1.5rem 0;   /* Adjust spacing for a title */
+  }
+  
+  
+  .project-card h3,
+.project-card p {
+  color: inherit; /* Inherits global color for text */
+}
+
+.project-card a {
+  color: #007BFF; /* Links stay blue */
+}
+
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
