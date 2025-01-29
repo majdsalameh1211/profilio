@@ -1,49 +1,104 @@
 .projects {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .projects h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-  }
-  
-  .projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    width: 300px;
-    text-align: left;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  h4 {
-    text-align: center; /* Center the text */
-    font-weight: bold;  /* Make the text bold */
-    color: #007BFF;     /* Set the text color to blue */
-    font-size: 2rem;    /* Increase font size for a title */
-    margin: 1.5rem 0;   /* Adjust spacing for a title */
-  }
-  
-  
-  .project-card h3,
+  margin-top: 100px;
+  padding: 2rem;
+  background-color: var(--section-bg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--box-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .project-card p {
-  color: inherit; /* Inherits global color for text */
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .project-card a {
-  color: #007BFF; /* Links stay blue */
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: var(--header-bg);
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.3s;
 }
 
-  
-  .project-card a:hover {
-    text-decoration: underline;
+.project-card a:hover {
+  background-color: var(--link-hover);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects {
+    padding: 1.5rem;
   }
-  
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .project-card a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 1rem;
+  }
+
+  .project-card {
+    padding: 0.8rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+
+  .project-card a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

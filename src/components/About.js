@@ -51,7 +51,7 @@ const About = () => {
             skills. Passionate about continuous learning and innovation, I am
             eager to grow and contribute to impactful projects.
           </p>
-          <h3>Software Engineering Student </h3>
+          
         </div>
       </div>
 
