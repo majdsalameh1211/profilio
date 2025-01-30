@@ -4,25 +4,60 @@ import "slick-carousel/slick/slick-theme.css";
 import '../style/Header.css';
 
 const Header = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
+  const [activeThemeButton, setActiveThemeButton] = useState(false);
 
-  // Handle theme toggle
   const toggleTheme = () => {
-    setIsDarkTheme((prevTheme) => !prevTheme);
-    document.body.className = isDarkTheme ? 'dark-theme' : 'light-theme';
+    setIsDarkTheme((prevTheme) => {
+      const newTheme = !prevTheme;
+      document.body.className = newTheme ? 'dark-theme' : 'light-theme';
+      setActiveThemeButton(true); // Activate border for the theme button
+      return newTheme;
+    });
+
+    // Remove border from theme button after a short delay
+    setTimeout(() => {
+      setActiveThemeButton(false);
+    }, 2000);
   };
 
-  // Handle scroll event
+  // Handle scroll event and detect the active section
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      const sections = ["about", "projects", "contact"];
+      let currentSection = activeSection;
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4) {
+            currentSection = section;
+          }
+        }
+      });
+
+      if (currentSection !== activeSection) {
+        setActiveSection(currentSection);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [activeSection]);
+
+  const handleNavClick = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(section);
+    }
+  };
 
   return (
     <header
@@ -46,13 +81,49 @@ const Header = () => {
         )}
         <nav>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="#about"
+                className={activeSection === "about" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick("about");
+                }}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className={activeSection === "projects" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick("projects");
+                }}
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={activeSection === "contact" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick("contact");
+                }}
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
-        <button className="theme-toggle" onClick={toggleTheme}>
-          {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
+        <button
+          className={`theme-toggle ${activeThemeButton ? "active" : ""}`}
+          onClick={toggleTheme}
+        >
+          {isDarkTheme ? "Light Mode" : "Dark Mode"}
         </button>
       </div>
     </header>

@@ -18,7 +18,7 @@ const About = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Number of visible boxes
+    slidesToShow: 2, 
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -36,9 +36,17 @@ const About = () => {
   return (
     <section id="about" className="about">
       
-      <h4>About Me </h4>
+      <h4>About Me</h4>
+
+      {/* ✅ Add introduction */}
+      <div className="intro">
+        {/* ✅ Show image only on small screens */}
+        <img src={require('../public/pic.jpg')} alt="Majd Salameh" className="about-image" />
+        <h2>Hello, I am Majd Salameh</h2>
+       
+      </div>
+
       <div className="about-container">
-        
         <div className="about-text">
           <p>
             I am a Software Engineering student with two semesters remaining,
@@ -51,7 +59,6 @@ const About = () => {
             skills. Passionate about continuous learning and innovation, I am
             eager to grow and contribute to impactful projects.
           </p>
-          
         </div>
       </div>
 
