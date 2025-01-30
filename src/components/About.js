@@ -35,34 +35,21 @@ const About = () => {
 
   return (
     <section id="about" className="about">
-      <h4>About Me</h4>
+     <h2 className="page-title">About Me</h2>
+<p className="about-text">
+  Hi, I'm <strong>Majd Salameh</strong>, a passionate <strong>Software Engineering Student</strong> with a love for building efficient, scalable, and innovative applications. 
+  My expertise spans <strong>full-stack development</strong>, working with modern technologies like <strong>React.js, Node.js, and Firebase</strong>.
+</p>
 
-      {/* ✅ Introduction */}
-      <div className="intro">
-        {/* ✅ Show image only on small screens */}
-        <img src={require('../public/pic.jpg')} alt="Majd Salameh" className="about-image" />
-        <h2>Hello, I am Majd Salameh</h2>
-      </div>
-
-      <div className="about-container">
-        <div className="about-text">
-          <p>
-            I am a Software Engineering student with two semesters remaining,
-            equipped with strong foundations in Software Systems Architecture,
-            object-oriented programming (OOP), and functional programming. My
-            experience includes developing diverse DevOps, full-stack, frontend,
-            and backend projects, leveraging APIs and deploying applications to
-            custom domains. As an Agile practitioner in dynamic environments, I
-            excel as a collaborative team player with excellent communication
-            skills. Passionate about continuous learning and innovation, I am
-            eager to grow and contribute to impactful projects.
-          </p>
-        </div>
-      </div>
+<p className="about-text">
+  I thrive in solving complex problems and enjoy working on projects that make an impact. Whether it's crafting elegant front-end experiences or optimizing back-end performance, 
+  I’m always eager to learn and push the boundaries of technology.
+</p>
 
       {/* Skills Section */}
       <div className="skills-section">
-        <h4>Skills</h4>
+      <h2 className="page-title">skills</h2>
+
         <Slider {...sliderSettings}>
           {skills.map((skill, index) => (
             <div key={index} className="skill-card">

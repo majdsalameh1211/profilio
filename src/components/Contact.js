@@ -19,7 +19,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <h4>Contact</h4>
+      <h2 className="page-title">Contact</h2>
+
       <button className="download-resume-btn" onClick={handleDownload}>
         📄 Download Resume
       </button>
