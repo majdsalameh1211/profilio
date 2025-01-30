@@ -35,20 +35,31 @@ const About = () => {
 
   return (
     <section id="about" className="about">
-     <h2 className="page-title">About Me</h2>
-<p className="about-text">
-  Hi, I'm <strong>Majd Salameh</strong>, a passionate <strong>Software Engineering Student</strong> with a love for building efficient, scalable, and innovative applications. 
-  My expertise spans <strong>full-stack development</strong>, working with modern technologies like <strong>React.js, Node.js, and Firebase</strong>.
-</p>
+      
 
-<p className="about-text">
-  I thrive in solving complex problems and enjoy working on projects that make an impact. Whether it's crafting elegant front-end experiences or optimizing back-end performance, 
-  I’m always eager to learn and push the boundaries of technology.
-</p>
+      {/* ✅ Introduction */}
+      <div className="intro">
+        {/* ✅ Show image on small screens */}
+        <picture>
+          <source srcSet={require('../public/pic.jpg')} media="(max-width: 768px)" />
+          <img src={require('../public/pic.jpg')} alt="Majd Salameh" className="about-image" />
+        </picture>
+        <h3 className="about-heading">Majd Salameh – Software Engineer in the Making</h3>
+      </div>
+
+      <div className="about-container">
+        <div className="about-text">
+        <p className="about-text">
+          Hello, I’m <strong>Majd Salameh</strong>, a dedicated <strong>Software Engineering student</strong> in my final year at <strong>Braude College</strong>.
+          Passionate about <strong>building scalable, efficient, and impactful software</strong>, I specialize in <strong>full-stack development, deep learning, and system optimization</strong>.
+          My journey in software engineering is fueled by curiosity, innovation, and the drive to solve real-world problems.
+        </p>
+        </div>
+      </div>
 
       {/* Skills Section */}
       <div className="skills-section">
-      <h2 className="page-title">skills</h2>
+        <h2 className="page-title">💻 My Technical Arsenal</h2>
 
         <Slider {...sliderSettings}>
           {skills.map((skill, index) => (

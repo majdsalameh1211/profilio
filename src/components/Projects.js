@@ -70,7 +70,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h2 className="page-title">Projects</h2>
+      <h2 className="page-title">🚀 My Key Projects</h2>
 
       <Slider {...sliderSettings} className="projects-slider">
         {projects.map((project, index) => (

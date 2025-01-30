@@ -103,3 +103,87 @@
   transform: scale(0.98);
   box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5);
 }
+
+/* 🎯 Career Goals Section */
+.career-goals {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--box-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.career-goals h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.career-goals p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+/* 🎯 Career Goals Section */
+.career-goals {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: var(--box-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.career-goals h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.career-goals p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* 🔗 Contact Section */
+.contact-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* 📄 Resume Download Button */
+.resume-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* 📩 Contact Info Section */
+.contact-info {
+  padding: 2rem;
+  background-color: var(--section-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
