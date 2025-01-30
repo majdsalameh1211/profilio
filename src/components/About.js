@@ -17,15 +17,15 @@ const About = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 2, 
+    speed: 600,
+    slidesToShow: 2, // Show 2 skills per row on large screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 768, // Below 768px, show only 1 skill at a time
         settings: {
           slidesToShow: 1,
         },
@@ -35,15 +35,13 @@ const About = () => {
 
   return (
     <section id="about" className="about">
-      
       <h4>About Me</h4>
 
-      {/* ✅ Add introduction */}
+      {/* ✅ Introduction */}
       <div className="intro">
         {/* ✅ Show image only on small screens */}
         <img src={require('../public/pic.jpg')} alt="Majd Salameh" className="about-image" />
         <h2>Hello, I am Majd Salameh</h2>
-       
       </div>
 
       <div className="about-container">
@@ -67,7 +65,7 @@ const About = () => {
         <h4>Skills</h4>
         <Slider {...sliderSettings}>
           {skills.map((skill, index) => (
-            <div key={index} className="skill-box">
+            <div key={index} className="skill-card">
               <h3>{skill.title}</h3>
               <ul>
                 {skill.items.map((item, idx) => (

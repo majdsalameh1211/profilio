@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa'; // Import Sun and Moon icons
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../style/Header.css';
@@ -119,11 +120,12 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        {/* Theme Toggle Button with Sun & Moon Icons */}
         <button
           className={`theme-toggle ${activeThemeButton ? "active" : ""}`}
           onClick={toggleTheme}
         >
-          {isDarkTheme ? "Light Mode" : "Dark Mode"}
+          {isDarkTheme ? <FaSun className="theme-icon" /> : <FaMoon className="theme-icon" />}
         </button>
       </div>
     </header>
