@@ -6,7 +6,7 @@ import '../style/Contact.css';
 const Contact = () => {
   const handleDownload = () => {
     // Path to the resume file inside the public folder
-    const resumePath = "/Majd Salameh CV 2025.pdf"; // No need for process.env.PUBLIC_URL
+    const resumePath = "/Majd_CV_2025.pdf"; // No need for process.env.PUBLIC_URL
 
     // Create a temporary link to trigger the download
     const link = document.createElement("a");
