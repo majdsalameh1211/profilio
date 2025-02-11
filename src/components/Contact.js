@@ -4,18 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import '../style/Contact.css';
 
 const Contact = () => {
-  const handleDownload = () => {
-    // Path to the resume file inside the public folder
-    const resumePath = "/Majd_CV_2025.pdf"; // No need for process.env.PUBLIC_URL
 
-    // Create a temporary link to trigger the download
-    const link = document.createElement("a");
-    link.href = resumePath;
-    link.download = "Majd_Salameh_CV_2025.pdf"; // Rename file when downloaded
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <section id="contact" className="contact">
@@ -33,12 +22,14 @@ const Contact = () => {
       {/* 🔗 Contact & Resume Section */}
       <div className="contact-section">
         <h2 className="page-title">🔗 Let’s Connect & Build Something Great!</h2>
-
+{/*
         <div className="resume-container">
           <button className="download-resume-btn" onClick={handleDownload}>
             📄 Download Resume
           </button>
         </div>
+
+*/}
       </div>
 
       {/* 📩 Contact Information */}

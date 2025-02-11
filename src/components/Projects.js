@@ -52,7 +52,7 @@ const Projects = () => {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 2, // Shows 2 projects at a time on larger screens
+    slidesToShow: 3, // Shows 2 projects at a time on larger screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,

@@ -18,7 +18,7 @@ const About = () => {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 2, // Show 2 skills per row on large screens
+    slidesToShow: 3, // Show 2 skills per row on large screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -31,6 +31,19 @@ const About = () => {
         },
       },
     ],
+  };
+
+  const handleDownload = () => {
+    // Path to the resume file inside the public folder
+    const resumePath = "/Majd_CV_2025.pdf"; // No need for process.env.PUBLIC_URL
+
+    // Create a temporary link to trigger the download
+    const link = document.createElement("a");
+    link.href = resumePath;
+    link.download = "Majd_Salameh_CV_2025.pdf"; // Rename file when downloaded
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -46,6 +59,14 @@ const About = () => {
         </picture>
         <h3 className="about-heading">Majd Salameh – Software Engineer in the Making</h3>
       </div>
+
+      <div className="resume-container">
+          <button className="download-resume-btn" onClick={handleDownload}>
+            📄 Download Resume
+          </button>
+        </div>
+      
+
 
       <div className="about-container">
         <div className="about-text">
