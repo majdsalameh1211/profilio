@@ -1,71 +1,40 @@
-# Getting Started with Create React App
+# 👨‍💻 Majd Salameh – Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal developer portfolio!  
+This site showcases my projects, skills, and background as a software engineering student and aspiring full-stack developer.
 
-## Available Scripts
+🔗 **Live Portfolio**: [portfolio-iota-sable-12.vercel.app](https://portfolio-iota-sable-12.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧠 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm a final-year software engineering student at ORT Braude College, passionate about building real-world applications with modern tools and frameworks. I enjoy solving problems, learning new technologies, and turning ideas into working products.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, Flutter, Tailwind CSS, JavaFX
+- **Backend**: Node.js, Express, Firebase, SQL
+- **Languages**: JavaScript, Dart, Java, Python, C++
+- **Tools**: Git, GitHub, Postman, MongoDB Atlas, VS Code, Unity
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Projects Featured
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 📝 **GoNature** – Park reservation system (JavaFX + SQL)
+- 📱 **Android App** – Children’s book app with age categorization (Flutter + Firebase + optional AI)
+- 🌐 **Networking** – Full-stack social media platform (React + Node.js + MongoDB)
+- 🤖 **WhatsApp Chatbot** *(Freelance Project)* – Automated client communication using GreenAPI (Node.js + JSON export)
+- 🧠 **VisoSpeak** – AI-powered lip-reading system (PyTorch + NLP + custom Transformer)
+- 🧳 **AR Tourism App** – Augmented reality scene in Unity showcasing the Galilee Boat (Unity + C# + 3D character + video/audio)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📫 Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# profile
+- **Email**: majd.salameh.dev@gmail.com  
+- **GitHub**: [github.com/majdsalameh1211](https://github.com/majdsalameh1211)  
+- **LinkedIn**: [Majd Salameh](https://linkedin.com/in/majdsalameh)
