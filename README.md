@@ -25,7 +25,7 @@ I'm a final-year software engineering student at ORT Braude College, passionate 
 ## 📂 Projects Featured
 
 - 📝 **GoNature** – Park reservation system (JavaFX + SQL)
-- 📱 **Android App** – Children’s book app with age categorization (Flutter + Firebase + optional AI)
+- 📱 **Android App** – Children’s book app with age categorization (Flutter + Firebase )
 - 🌐 **Networking** – Full-stack social media platform (React + Node.js + MongoDB)
 - 🤖 **WhatsApp Chatbot** *(Freelance Project)* – Automated client communication using GreenAPI (Node.js + JSON export)
 - 🧠 **VisoSpeak** – AI-powered lip-reading system (PyTorch + NLP + custom Transformer)
